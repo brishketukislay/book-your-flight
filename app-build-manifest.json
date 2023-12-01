@@ -1,22 +1,22 @@
 {
   "pages": {
     "/_not-found": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
       "static/chunks/app/_not-found-cbf911bded31677e.js"
     ],
     "/layout": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
-      "static/css/78b60f9cfd59ce5e.css",
-      "static/chunks/app/layout-c64456df331b4737.js"
+      "static/css/16ac641c10067c47.css",
+      "static/chunks/app/layout-4b64769c4a30a2d3.js"
     ],
     "/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
@@ -24,7 +24,7 @@
       "static/chunks/app/page-209b965f22f78448.js"
     ],
     "/users/feedback/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
@@ -33,7 +33,7 @@
       "static/chunks/app/users/feedback/page-87c0a25a2029cab8.js"
     ],
     "/users/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
@@ -42,7 +42,7 @@
       "static/chunks/app/users/page-4cc8f90a25f373dc.js"
     ],
     "/users/sharing-collabs/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
@@ -51,7 +51,7 @@
       "static/chunks/app/users/sharing-collabs/page-26208e6c0e89a364.js"
     ],
     "/users/support/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
@@ -60,7 +60,7 @@
       "static/chunks/app/users/support/page-3a8014764ddd8fd1.js"
     ],
     "/users/travel-planner/page": [
-      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/webpack-b75ba3b041a208ed.js",
       "static/chunks/fd9d1056-2c4688e74b179348.js",
       "static/chunks/472-aecc497a22ee6509.js",
       "static/chunks/main-app-e4b1c6ad9336dbe6.js",
