@@ -1,0 +1,40 @@
+
+.container{
+    height: 400px;
+    overflow: scroll;
+}
+.container::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+  
+  /* Optional: You can further style the appearance of the scrollbar track and thumb
+  .container::-webkit-scrollbar-track {
+    background: transparent; /* Set background color of the scrollbar track */
+  /* }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set color of the scrollbar thumb */
+  /* }  */
+.card{
+    display: inline-block;
+    box-shadow: 5px 5px 20px 0px grey;
+    min-width: 360px;
+    max-width: 560px;
+    width: 100%;
+    margin-left: calc(40% - 160px);
+    padding: 10px 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(150 202 217 / 50%);
+}
+.destinationTable{
+    width: 100%;
+}
+.destinationTableHead{
+    text-align: left;
+    height: 60px;
+}
+.destinationTableRow{
+    height: 40px;
+}

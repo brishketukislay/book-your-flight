@@ -1,0 +1,14 @@
+{
+  "trip1":{
+  "origin" : "London",
+  "destination" : "Paris",
+  "travel-date" : "30/11/2025",
+  "arrival-date" : "01/12/2025"
+  },
+  "trip2":{
+    "origin" : "London",
+    "destination" : "Paris",
+    "travel-date" : "30/11/2025",
+    "arrival-date" : "01/12/2025"
+    }
+}

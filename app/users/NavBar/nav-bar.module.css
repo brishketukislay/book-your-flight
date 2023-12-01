@@ -1,0 +1,22 @@
+.active{
+    border-right: 4px solid #FFD700;
+    background-color: rgba(165, 185, 160, 0.9);
+}
+.sideNav{
+    background-color: rgba(118, 140, 140, 0.8);
+    color: #ffffff;
+    width: 160px;
+    min-height: calc(100dvh - 60px);
+    display: inline-block;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+}
+.navElement{
+    height: 40px;
+    padding: 8px 10px;
+}
+.navElement:hover{
+    background-color: rgba(165, 185, 160, 0.6);
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.footer{
+    background-color: #03385dc4;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 12px 10px;
+}
+.footerContent{
+    display: flex;
+    float: right;
+}
+.contact{
+    margin-right: 10px;
+}
