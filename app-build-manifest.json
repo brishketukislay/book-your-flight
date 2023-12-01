@@ -1,0 +1,73 @@
+{
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/app/_not-found-cbf911bded31677e.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/css/78b60f9cfd59ce5e.css",
+      "static/chunks/app/layout-c64456df331b4737.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/chunks/app/page-209b965f22f78448.js"
+    ],
+    "/users/feedback/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/css/3f7f686f8844b31e.css",
+      "static/chunks/app/users/feedback/page-87c0a25a2029cab8.js"
+    ],
+    "/users/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/css/9ea2a16ed06d1b80.css",
+      "static/chunks/app/users/page-4cc8f90a25f373dc.js"
+    ],
+    "/users/sharing-collabs/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/css/ca8de73963da9089.css",
+      "static/chunks/app/users/sharing-collabs/page-26208e6c0e89a364.js"
+    ],
+    "/users/support/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/css/3f7f686f8844b31e.css",
+      "static/chunks/app/users/support/page-3a8014764ddd8fd1.js"
+    ],
+    "/users/travel-planner/page": [
+      "static/chunks/webpack-e42f5cd3be00724c.js",
+      "static/chunks/fd9d1056-2c4688e74b179348.js",
+      "static/chunks/472-aecc497a22ee6509.js",
+      "static/chunks/main-app-e4b1c6ad9336dbe6.js",
+      "static/chunks/326-08c356754a1b2136.js",
+      "static/chunks/486-6b2dd5ec29d95cd1.js",
+      "static/css/9db6c6dc39c99ccc.css",
+      "static/chunks/app/users/travel-planner/page-a3de2a8fe25e03d8.js"
+    ]
+  }
+}
