@@ -41,7 +41,7 @@ const Dashboard = () => {
     </h1>
     <div className={style.container}>
     {tripData.map((trip) => (
-    <div className={style.card}>
+    <div key = {trip.id} className={style.card}>
       <table className={style.destinationTable}>
         <thead className={style.destinationTableHead}>
           <tr>
