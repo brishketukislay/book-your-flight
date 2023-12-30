@@ -2,8 +2,8 @@
     margin-left: 220px;
 }
 .headerMsg{
-    margin-top: 50px;
-    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 5px;
     font-weight: 500;
     font-size: 30px;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #ffffff, 0 0 82px #141414, 0 0 92px #0fa;
@@ -35,6 +35,8 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 10px;
   }
   
   .formLabel {
@@ -45,6 +47,8 @@
   .formInput {
     padding: 8px;
     margin-bottom: 16px;
+    border: 2px solid black;
+    width: 100%;
   }
   
   .formButton {
@@ -58,4 +62,13 @@
   
   .formButton:hover {
     background-color: #0056b3;
+  }
+  .login{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+  }
+  .welcome{
+    font-size: 30px;
+    margin-bottom: 30px;
   }

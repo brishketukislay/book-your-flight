@@ -38,11 +38,13 @@ const flightData = [
 const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, formData }) => {
   const [selectedFlightNumber, setSelectedFlightNumber] = useState('');
   function bookTrip(flightNumber?:string): void {
+    if(selectedFlightNumber && selectedFlightNumber !== null)
     window.confirm(`Congratulations! Your flight ${selectedFlightNumber} has been booked.`);
+  else
+  alert("Please select your flight");
   }
 
   function handleRadioChange(flightNumber: string): void {
-    console.log('flightNumber',flightNumber);
     setSelectedFlightNumber(flightNumber);
   }
 

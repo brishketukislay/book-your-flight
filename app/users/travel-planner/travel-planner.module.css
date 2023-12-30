@@ -4,7 +4,7 @@
     margin: 10px;
 }
 .cardScroll{
-  height: 480px;
+  height: 435px;
   overflow: scroll;
 }
 .cardScroll::-webkit-scrollbar{

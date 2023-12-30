@@ -42,7 +42,6 @@ const TravelPlanner = () => {
     }
     else
       alert("Please fill the valid details");
-    console.log('submitted', submitted, 'n', selectedReturnDate)
   };
 
   const handleDateChange = (date: any) => {
@@ -56,10 +55,6 @@ const TravelPlanner = () => {
   const handleReturnDate = (date: any) => {
     setReturnDate(date);
   };
-
-  console.log('selected date', selectedDate, selectedReturnDate);
-  console.log('checked', isChecked);
-
   return (
     <>
       <Header />

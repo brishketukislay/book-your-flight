@@ -10,3 +10,15 @@
     top: 0;
     z-index: 1;
 }
+.signout{
+    background-color: #7ca9aaeb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffff;
+    float: right;
+    font-size: 20px;
+    font-weight: 400;
+}
+.signout :hover{
+    background-color: #1a4c4deb;
+}

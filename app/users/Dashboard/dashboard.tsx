@@ -37,7 +37,6 @@ const Dashboard = () => {
   const [tripDetails,setTripDetails] = useState(tripData);
 
   function handleSortByValueChange(e:any) {
-    console.log("event",e.target.value);
     setSortByValue(e.target.value);
     let sortedTrips;
     switch (e.target.value) {
