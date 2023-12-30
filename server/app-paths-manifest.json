@@ -1,10 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
   "/users/feedback/page": "app/users/feedback/page.js",
-  "/users/page": "app/users/page.js",
   "/users/sharing-collabs/page": "app/users/sharing-collabs/page.js",
+  "/page": "app/page.js",
   "/users/support/page": "app/users/support/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/users/page": "app/users/page.js",
   "/users/travel-planner/page": "app/users/travel-planner/page.js"
 }
