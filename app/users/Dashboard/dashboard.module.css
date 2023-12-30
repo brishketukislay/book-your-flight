@@ -24,9 +24,19 @@
     width: 100%;
     margin-left: calc(40% - 160px);
     padding: 10px 15px;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
     background-color: rgb(150 202 217 / 50%);
+}
+.sortBYContainer{
+  margin: 0px 0 10px calc(40% - 160px);
+}
+.sortBY{
+  display: inline-block;
+}
+.sortBYOptions{
+  display: inline-block;
+  background: none;
 }
 .destinationTable{
     width: 100%;
