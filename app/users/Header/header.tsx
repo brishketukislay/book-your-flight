@@ -1,6 +1,7 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import style from './header.module.css';
-import { useRouter } from 'next/router'; // Correct import statement
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const router = useRouter();
@@ -8,12 +9,12 @@ const Header = () => {
     sessionStorage.removeItem('isLoggedIn');
     router.push('/');
   }
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Initialize with boolean value
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedIsLoggedIn = sessionStorage.getItem('isLoggedIn');
-      setIsLoggedIn(storedIsLoggedIn === 'true'); // Convert to boolean
+      setIsLoggedIn(storedIsLoggedIn === 'true');
     } else {
       setIsLoggedIn(false);
     }
@@ -24,7 +25,6 @@ const Header = () => {
   }, [isLoggedIn, router]);
 
   if (!isLoggedIn) {
-    // Redirect logic can also be handled by returning a different component or using Next.js's 'next/router' 'replace' method
     return null;
   }
 
