@@ -1,16 +1,23 @@
-"use client"
-import React, { useEffect } from 'react'
-import style from './header.module.css'
-import { useRouter } from 'next/navigation'
+import React, { useEffect, useState } from 'react';
+import style from './header.module.css';
+import { useRouter } from 'next/router'; // Correct import statement
 
 const Header = () => {
-  const isLoggedIn = sessionStorage.getItem('isLoggedIn');
   const router = useRouter();
-  function handleSignOut(){
-    sessionStorage.removeItem("isLoggedIn");
-    router.push('/')
+  function handleSignOut() {
+    sessionStorage.removeItem('isLoggedIn');
+    router.push('/');
   }
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Initialize with boolean value
+
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedIsLoggedIn = sessionStorage.getItem('isLoggedIn');
+      setIsLoggedIn(storedIsLoggedIn === 'true'); // Convert to boolean
+    } else {
+      setIsLoggedIn(false);
+    }
+
     if (!isLoggedIn) {
       router.push('/');
     }
@@ -20,13 +27,15 @@ const Header = () => {
     // Redirect logic can also be handled by returning a different component or using Next.js's 'next/router' 'replace' method
     return null;
   }
-  return (
-    <header className={style.header}>My Travel Planner
-    <button className={style.signout} onClick={handleSignOut}>
-      Sign Out
-    </button>
-    </header>
-  )
-}
 
-export default Header
+  return (
+    <header className={style.header}>
+      My Travel Planner
+      <button className={style.signout} onClick={handleSignOut}>
+        Sign Out
+      </button>
+    </header>
+  );
+};
+
+export default Header;
