@@ -1,12 +1,12 @@
 {
-  "homepage":"https://brishketukislay.github.io/book-your-flight/",
+  "homepage": "https://brishketukislay.github.io/book-your-flight/",
   "name": "user-profile",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predeploy":"next build",
-    "deploy":"gh-pages -d .next",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d .next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

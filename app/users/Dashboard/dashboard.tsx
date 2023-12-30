@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './dashboard.module.css';
 import homePageStyle from '../home-page.module.css'
 
@@ -8,31 +8,58 @@ const Dashboard = () => {
       id: 'trip1',
       origin: 'London',
       destination: 'Paris',
-      'travel-date': '30/11/2025',
-      'arrival-date': '01/12/2025',
+      'travel-date': '2025-11-30',
+      'arrival-date': '2025-12-01',
     },
     {
     id: 'trip2',
       origin: 'Paris',
       destination: 'London',
-      'travel-date': '30/11/2025',
-      'arrival-date': '01/12/2025',
+      'travel-date': '2025-11-28',
+      'arrival-date': '2025-11-20',
     },
     {
       id: 'trip3',
       origin: 'New York',
       destination: 'Tokyo',
-      'travel-date': '01/12/2025',
-      'arrival-date': '05/12/2025',
+      'travel-date': '2025-12-20',
+      'arrival-date': '2025-12-22',
     },
     {
         id: 'trip4',
         origin: 'Tokyo',
         destination: 'New York',
-        'travel-date': '06/12/2025',
-        'arrival-date': '11/12/2025',
+        'travel-date': '2025-12-24',
+        'arrival-date': '2025-12-26',
       },
   ];
+  const [sortByValue, setSortByValue] = useState();
+  const [tripDetails,setTripDetails] = useState(tripData);
+
+  function handleSortByValueChange(e:any) {
+    console.log("event",e.target.value);
+    setSortByValue(e.target.value);
+    let sortedTrips;
+    switch (e.target.value) {
+      case 'trvlDate':
+        sortedTrips = [...tripDetails].sort((a, b) =>
+          new Date(a['travel-date']).getTime() - new Date(b['travel-date']).getTime()
+        );
+        break;
+      case 'arvlDate':
+        sortedTrips = [...tripDetails].sort((a, b) =>
+          new Date(a['arrival-date']).getTime() - new Date(b['arrival-date']).getTime()
+        );
+        break;
+      case 'destination':
+        sortedTrips = [...tripDetails].sort((a, b) => a.destination.localeCompare(b.destination));
+        break;
+      default:
+        sortedTrips = tripDetails;
+    }
+
+    setTripDetails(sortedTrips);
+  }
 
   return (
     <div className={homePageStyle.container}>
@@ -40,7 +67,15 @@ const Dashboard = () => {
         Welcome to My Trip Planner, here are your upcoming trips
     </h1>
     <div className={style.container}>
-    {tripData.map((trip) => (
+      <div className={style.sortBYContainer}>
+      <div className={style.sortBY}> Sort By:</div>
+      <select className={style.sortBYOptions} value={sortByValue} onChange={handleSortByValueChange}>
+        <option value="trvlDate">Travel Date</option>
+        <option value="arvlDate">Arrival Date</option>
+        <option value="destination">Destination</option>
+      </select>
+      </div>
+    {tripDetails.map((trip) => (
     <div key = {trip.id} className={style.card}>
       <table className={style.destinationTable}>
         <thead className={style.destinationTableHead}>
