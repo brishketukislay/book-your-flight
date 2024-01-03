@@ -10,23 +10,17 @@ const Header = () => {
     router.push('/');
   }
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedIsLoggedIn = sessionStorage.getItem('isLoggedIn');
       setIsLoggedIn(storedIsLoggedIn === 'true');
+      if(!storedIsLoggedIn){
+        router.push('/')
+      }
     } else {
       setIsLoggedIn(false);
     }
-
-    if (!isLoggedIn) {
-      router.push('/');
-    }
   }, [isLoggedIn, router]);
-
-  if (!isLoggedIn) {
-    return null;
-  }
 
   return (
     <header className={style.header}>
