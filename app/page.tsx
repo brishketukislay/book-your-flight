@@ -8,19 +8,38 @@ export default function Home() {
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (validateEmail(email) && password) {
-      if (email === 'admin@byf.com' && password === 'zaq12wsx') {
-        sessionStorage.setItem('isLoggedIn', 'true');
-        router.push('/users');
+        const url = "https://register-user-vd7l.onrender.com/api/users/login"
+        try{
+          const response = await fetch(url, {method:'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        body:JSON.stringify({
+          email:email,
+        password:password
+        })})
+        if(response){
+          console.log('response',response);
+          const data = await response.json();
+          if(data.accessToken){
+          sessionStorage.setItem('isLoggedIn', 'true');
+          router.push('/users');}
+          else{
+            alert(data.message);
+          }
+        }
+      }
+        catch{
+            alert('Please enter valid credentials.');
+        }
       } else {
         alert('Invalid credentials.');
       }
-    } else {
-      alert('Please enter valid credentials.');
-    }
+    // }
   };
 
   const validateEmail = (email: string) => {
@@ -34,7 +53,7 @@ export default function Home() {
       <div className={`mt-15 ${styles.loginContainer}`}>
         <form className={styles.form} onSubmit={handleSubmit}>
           <h2 className={styles.login}>Login</h2>
-          <label className={styles.formLabel}>Email: admin@byf.com</label>
+          <label className={styles.formLabel}>Email: jane@doe.com</label>
           <input
             className={styles.formInput}
             type="email"
