@@ -12,8 +12,13 @@ export default function Home() {
     e.preventDefault();
 
     if (validateEmail(email) && password) {
-        const url = "https://register-user-vd7l.onrender.com/api/users/login"
+        const url = "https://register-user-vd7l.onrender.com/api/users/login";
         try{
+          if(email=='jane@mytrip.com' && password =='zaq12wsx'){
+          sessionStorage.setItem('isLoggedIn', 'true');
+          router.push('/users');
+          }
+          else{
           const response = await fetch(url, {method:'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -33,6 +38,7 @@ export default function Home() {
           }
         }
       }
+      }
         catch{
             alert('Please enter valid credentials.');
         }
@@ -49,6 +55,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center p-24">
+    <p className={styles.newUser}>Please use user jane@mytrip.com if login api is down</p>
       <p className={styles.welcome}>Welcome to Plan My Trip</p>
       <div className={`mt-15 ${styles.loginContainer}`}>
         <form className={styles.form} onSubmit={handleSubmit}>
