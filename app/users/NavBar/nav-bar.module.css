@@ -26,6 +26,12 @@
 .tabStyle{
     display: inline;
 }
+.open{
+    display: inline-block;
+}
+.closeButton{
+    display: none;
+}
 @media (min-width: 768px) and (max-width: 1024px){
    .tabStyle{
     display: none;
@@ -33,4 +39,15 @@
    .sideNav{
     width: 55px;
    }
+}
+@media(max-width:766px){
+    .navClose{
+        display: none;
+    }
+    .closeButton{
+        display: inline;
+        position: fixed;
+        top: 10px;
+        z-index: 1;
+    }
 }

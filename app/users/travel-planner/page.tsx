@@ -73,28 +73,25 @@ const TravelPlanner = () => {
           </label>
           <br />
           <div className={style.datePickerContainer}>
-            <label>Select a travel date: </label>
+            <label className={style.travelDateStyle}>Select a travel date: </label>
             <DatePicker
               selected={selectedDate}
               onChange={handleDateChange}
-            // Add any other necessary props
             />
           </div>
           {isChecked && (
             <div className={style.datePickerContainer}>
-              <label>Select a return date: </label>
+              <label className={style.returnDateStyle}>Select a return date: </label>
               <DatePicker
                 selected={selectedReturnDate}
                 onChange={handleReturnDate}
-              // Add any other necessary props
               />
             </div>
           )}
 
-          {/* onSubmit={handleSubmit} */}
           <form >
-
-            <label className={style.userCityInput}>
+            <div className={style.userCityInput}>
+            <label>
               Origin City:
               <input
                 type="text"
@@ -105,8 +102,9 @@ const TravelPlanner = () => {
                 className={style.originCityInput}
               />
             </label>
-
-            <label className={style.userCityInput}>
+            </div>
+            <div className={style.userCityInput}>
+            <label>
               Destination City:
               <input
                 type="text"
@@ -117,6 +115,7 @@ const TravelPlanner = () => {
                 className={style.destCityInput}
               />
             </label>
+            </div>
           </form>
           <button className={`${style.submitButton} ${homePageStyle.primaryButton}`} onClick={handleSubmit}>Find Flights</button>
         </div>

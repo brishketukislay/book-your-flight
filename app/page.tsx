@@ -54,7 +54,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col items-center p-24">
+    <main className="flex flex-col items-center">
     <p className={styles.newUser}>Please use user jane@mytrip.com if login api is down</p>
       <p className={styles.welcome}>Welcome to Plan My Trip</p>
       <div className={`mt-15 ${styles.loginContainer}`}>

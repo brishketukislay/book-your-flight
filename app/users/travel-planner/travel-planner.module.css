@@ -47,3 +47,26 @@
       height: 84vh;
     }
  }
+ @media(max-width:767px){
+  .cardScroll{
+    height: 75vh;
+  }
+  .originCityInput{
+    margin-left: 85px;
+  }
+  .destCityInput{
+    margin-left: 44px;
+  }
+  .userCityInput{
+    margin-top: 0;
+  }
+  .travelDateStyle{
+    margin-right: 14px;
+  }
+  .returnDateStyle{
+    margin-right: 11px;
+  }
+  .datePickerContainer{
+    margin-top: 0;
+  }
+ }

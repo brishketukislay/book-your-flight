@@ -52,4 +52,18 @@
   .container{
     height: 90vh;
   }
+  .card{
+    margin-left: calc(40% - 215px);
+  }
+  .sortBY{
+    margin: 0px 0 10px calc(40% - 215px);
+  }
+}
+@media(max-width:767px){
+  .container{
+    height: auto;
+  }
+  .sortBY{
+    margin: 0px 0 10px calc(40% - 136px)
+  }
 }

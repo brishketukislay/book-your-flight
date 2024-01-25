@@ -22,3 +22,13 @@
 .signout :hover{
     background-color: #1a4c4deb;
 }
+@media(max-width:767px){
+    .header{
+        font-size: 22px;
+        padding-left: 48px;
+        padding-top: 14px;
+    }
+    .signout{
+        margin-top: -5px;
+    }
+}
