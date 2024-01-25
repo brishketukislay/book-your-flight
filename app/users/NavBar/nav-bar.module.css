@@ -20,3 +20,17 @@
     background-color: rgba(165, 185, 160, 0.6);
     cursor: pointer;
 }
+.icons{
+    margin:0 0 3px 3px;
+}
+.tabStyle{
+    display: inline;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+   .tabStyle{
+    display: none;
+   }
+   .sideNav{
+    width: 55px;
+   }
+}

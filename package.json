@@ -12,12 +12,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/material": "^5.15.6",
     "@natscale/react-calendar": "^0.0.0-beta.26",
     "axios": "^1.6.2",
     "next": "14.0.3",
     "react": "^18",
     "react-datepicker": "^4.23.0",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-pro-sidebar": "^1.1.0-alpha.2"
   },
   "devDependencies": {
     "@types/node": "^20",
