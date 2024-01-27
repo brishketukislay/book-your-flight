@@ -49,22 +49,22 @@
  }
  @media(max-width:767px){
   .cardScroll{
-    height: 75vh;
+    height: 70vh;
   }
   .originCityInput{
-    margin-left: 85px;
+    margin-left: 79px;
   }
   .destCityInput{
-    margin-left: 44px;
+    margin-left: 38px;
   }
   .userCityInput{
     margin-top: 0;
   }
   .travelDateStyle{
-    margin-right: 14px;
+    margin-right: 8px;
   }
   .returnDateStyle{
-    margin-right: 11px;
+    margin-right: 5px;
   }
   .datePickerContainer{
     margin-top: 0;
