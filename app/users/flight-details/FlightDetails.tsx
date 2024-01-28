@@ -66,7 +66,6 @@ const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, 
             <td className={styles.flightDetailsInfo}><strong>Flight Name:</strong> {flight.flightName}</td>
             <td className={styles.flightDetailsInfo}><strong>Dep. Date:</strong> {selectedDate ? selectedDate.toDateString() : 'None'}</td>
           </tr>
-          {/* <p><strong>Arrival Date:</strong> 2023-01-02</p> */}
           <tr>
           <td className={styles.flightDetailsInfo}><strong>Origin City:</strong> {formData.originCity}</td>
           <td className={styles.flightDetailsInfo}><strong>Destination City:</strong> {formData.destinationCity}</td>

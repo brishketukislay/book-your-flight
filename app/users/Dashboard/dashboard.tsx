@@ -86,14 +86,12 @@ const Dashboard = () => {
           </tr>
         </thead>
         <tbody>
-          {/* {tripData.map((trip) => ( */}
             <tr className={style.destinationTableRow} key={trip.id}>
               <td>{trip.origin}</td>
               <td>{trip.destination}</td>
               <td>{trip['travel-date']}</td>
               <td>{trip['arrival-date']}</td>
             </tr>
-          {/* ))} */}
         </tbody>
       </table>
       </div>
