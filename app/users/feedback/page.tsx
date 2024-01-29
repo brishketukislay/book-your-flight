@@ -8,7 +8,7 @@ const feedback = () => {
     <Header/>
     <NavBar/>
     <div>
-    Feedback</div>
+    Feedback Page</div>
     <Footer/>
     </>
   )
