@@ -8,7 +8,7 @@ const support = () => {
     <>
     <Header/>
     <NavBar/>
-    <div>support</div>
+    <div>Call us @ 7471417307</div>
     <Footer/>
     </>
   )
