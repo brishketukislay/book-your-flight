@@ -8,7 +8,7 @@ const support = () => {
     <>
     <Header/>
     <NavBar/>
-    <div>Call us @ 7471417307</div>
+    <div>Call us @ 7471417307 or email us at brishketu.kislay@gmail.com </div>
     <Footer/>
     </>
   )
