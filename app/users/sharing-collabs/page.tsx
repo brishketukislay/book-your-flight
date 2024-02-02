@@ -9,7 +9,7 @@ const Sharing_colab = () => {
     <>
     <Header/>
     <NavBar/>
-    <div>Sharing</div>
+    <div>Sharing & Collabs</div>
     <Footer/>
     </>
   )
