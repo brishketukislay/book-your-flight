@@ -1,0 +1,53 @@
+.active{
+    border-right: 4px solid #FFD700;
+    background-color: rgba(165, 185, 160, 0.9);
+}
+.sideNav{
+    background-color: rgba(118, 140, 140, 0.8);
+    color: #ffffff;
+    width: 160px;
+    min-height: calc(100dvh - 60px);
+    display: inline-block;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+}
+.navElement{
+    height: 40px;
+    padding: 8px 10px;
+}
+.navElement:hover{
+    background-color: rgba(165, 185, 160, 0.6);
+    cursor: pointer;
+}
+.icons{
+    margin:0 0 3px 3px;
+}
+.tabStyle{
+    display: inline;
+}
+.open{
+    display: inline-block;
+}
+.closeButton{
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+   .tabStyle{
+    display: none;
+   }
+   .sideNav{
+    width: 55px;
+   }
+}
+@media(max-width:766px){
+    .navClose{
+        display: none;
+    }
+    .closeButton{
+        display: inline;
+        position: fixed;
+        top: 10px;
+        z-index: 1;
+    }
+}

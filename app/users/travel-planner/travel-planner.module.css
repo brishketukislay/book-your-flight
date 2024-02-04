@@ -1,0 +1,72 @@
+.datePickerContainer{
+    /* margin-left: 250px; */
+    display: inline-block;
+    margin: 10px;
+}
+.cardScroll{
+  height: 435px;
+  overflow: scroll;
+}
+.cardScroll::-webkit-scrollbar{
+  display: none;
+}
+.originCityInput{
+  margin-left: 72px;
+}
+.destCityInput{
+  margin-left: 32px;
+}
+.userInputContainer{
+  display: inline-block;
+    box-shadow: 5px 5px 20px 0px grey;
+    padding: 10px 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(150 202 217 / 50%);
+    text-shadow: 0 0 10px #bcafd9, 0 0 20px #4e499b, 0 0 42px #fff, 0 0 82px #24035f, 0 0 92px #2b00ff;
+}
+.userCityInput{
+  margin: 10px;
+}
+.submitButton{
+  margin: 10px 10px 0 0;
+}
+/* travel-planner.module.css */
+/* .datePickerContainer {
+    margin-left: 250px;
+  }
+   */ 
+  /* Override styles for DatePicker */
+  .react-datepicker-wrapper .react-datepicker__input-container {
+    border: 1px solid grey !important;
+    border-radius: 4px !important;
+    padding: 5px !important;
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+    .cardScroll{
+      height: 84vh;
+    }
+ }
+ @media(max-width:767px){
+  .cardScroll{
+    height: 70vh;
+  }
+  .originCityInput{
+    margin-left: 79px;
+  }
+  .destCityInput{
+    margin-left: 38px;
+  }
+  .userCityInput{
+    margin-top: 0;
+  }
+  .travelDateStyle{
+    margin-right: 8px;
+  }
+  .returnDateStyle{
+    margin-right: 5px;
+  }
+  .datePickerContainer{
+    margin-top: 0;
+  }
+ }

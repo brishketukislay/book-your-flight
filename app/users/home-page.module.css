@@ -1,0 +1,105 @@
+/* @media (max-width: 600px){
+  .form {
+    width: 100vw;
+  }
+} */
+.container{
+    margin-left: 220px;
+}
+.headerMsg{
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #ffffff, 0 0 82px #141414, 0 0 92px #0fa;
+}
+.sideNav{
+    background-color: grey;
+    width: 15%;
+    height: 100vh;
+}
+.primaryButton{
+    background-color: #316567eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffff;
+    float: right;
+}
+
+/* .loginContainer { */
+    /* font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+  /* } */
+
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* width: 500px; */
+    margin-bottom: 10px;
+  }
+
+  .formLabel {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .formInput {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2px solid black;
+    width: 100%;
+  }
+
+  .formButton {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .formButton:hover {
+    background-color: #0056b3;
+  }
+  .login{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+  }
+  .welcome{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .newUser{
+    background-color: #607ea18f;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -40px;
+    margin-top: 85px;
+  }
+  @media(min-width: 600px){
+    .form {
+      width: 500px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+   .container{
+    margin-left: 70px;
+   }
+   .primaryButton{
+    float: left;
+   }
+}
+@media(max-width: 767px){
+  .container{
+    margin: 5px;
+  }
+}

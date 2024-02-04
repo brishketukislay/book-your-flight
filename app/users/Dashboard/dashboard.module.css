@@ -1,0 +1,69 @@
+
+.container{
+    height: 400px;
+    overflow: scroll;
+}
+.container::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+  
+  /* Optional: You can further style the appearance of the scrollbar track and thumb
+  .container::-webkit-scrollbar-track {
+    background: transparent; /* Set background color of the scrollbar track */
+  /* }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set color of the scrollbar thumb */
+  /* }  */
+.card{
+    display: inline-block;
+    box-shadow: 5px 5px 20px 0px grey;
+    min-width: 360px;
+    max-width: 560px;
+    width: 100%;
+    margin-left: calc(40% - 160px);
+    padding: 10px 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    background-color: rgb(150 202 217 / 50%);
+}
+.sortBYContainer{
+  margin: 0px 0 10px calc(40% - 160px);
+}
+.sortBY{
+  display: inline-block;
+}
+.sortBYOptions{
+  display: inline-block;
+  background: none;
+}
+.destinationTable{
+    width: 100%;
+}
+.destinationTableHead{
+    text-align: left;
+    height: 60px;
+}
+.destinationTableRow{
+    height: 40px;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .container{
+    height: 90vh;
+  }
+  .card{
+    margin-left: calc(40% - 215px);
+  }
+  .sortBY{
+    margin: 0px 0 10px calc(40% - 215px);
+  }
+}
+@media(max-width:767px){
+  .container{
+    height: 435px;
+  }
+  .sortBY{
+    margin: 0px 0 10px calc(40% - 136px)
+  }
+}

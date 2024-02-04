@@ -1,0 +1,34 @@
+.header{
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #316567eb;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.signout{
+    background-color: #7ca9aaeb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffff;
+    float: right;
+    font-size: 20px;
+    font-weight: 400;
+}
+.signout :hover{
+    background-color: #1a4c4deb;
+}
+@media(max-width:767px){
+    .header{
+        font-size: 22px;
+        padding-left: 48px;
+        padding-top: 14px;
+    }
+    .signout{
+        margin-top: -5px;
+    }
+}
