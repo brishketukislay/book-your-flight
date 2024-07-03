@@ -8,7 +8,7 @@ const footer = () => {
           Contact Us
         </p>
         <p>
-          Copyright @ 2023
+          Copyright @ 2024
         </p>
       </div>
     </footer>

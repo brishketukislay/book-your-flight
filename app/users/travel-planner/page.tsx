@@ -19,7 +19,7 @@ const TravelPlanner = () => {
     originCity: '',
     destinationCity: '',
   });
-
+  const [showSearchSection,setShowSearchSection] = useState(true);
   const { originCity, destinationCity } = formData;
 
   const handleChange = (e: any) => {
@@ -30,8 +30,7 @@ const TravelPlanner = () => {
   };
 
   const handleSubmit = () => {
-    // if((isChecked && selectedReturnDate || !isChecked)){
-
+    setShowSearchSection(false);
     if (originCity && destinationCity && selectedDate) {
       if ((isChecked && selectedReturnDate) || (!isChecked)) {
         setSubmitted(true);
@@ -62,6 +61,7 @@ const TravelPlanner = () => {
       <div className={homePageStyle.container}>
         <h1 className={homePageStyle.headerMsg}>Plan your next trip now!</h1>
         <div className={style.cardScroll}>
+          {showSearchSection &&(
         <div className={style.userInputContainer}>
           <label>
             Want to book a return ticket?
@@ -88,7 +88,6 @@ const TravelPlanner = () => {
               />
             </div>
           )}
-
           <form >
             <div className={style.userCityInput}>
             <label>
@@ -119,6 +118,7 @@ const TravelPlanner = () => {
           </form>
           <button className={`${style.submitButton} ${homePageStyle.primaryButton}`} onClick={handleSubmit}>Find Flights</button>
         </div>
+        )}
         <FlightSearch />
         {submitted &&
           <FlightDetails selectedDate={selectedDate} isChecked={isChecked} formData={formData} />
