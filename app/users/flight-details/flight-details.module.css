@@ -35,4 +35,6 @@
     margin: 5px 0;
     color: #555;
   } */
-  
+  .newJobStyle{
+    margin-top: 0 !important;
+  }
