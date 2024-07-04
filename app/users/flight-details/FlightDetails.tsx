@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './flight-details.module.css';
 import cardStyle from '../Dashboard/dashboard.module.css'
 import homePageStyle from '../home-page.module.css'
+import style from '../travel-planner/travel-planner.module.css'
 interface FlightDetailsProps {
   isChecked: boolean;
   selectedDate: Date | null;
@@ -47,7 +48,9 @@ const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, 
   function handleRadioChange(flightNumber: string): void {
     setSelectedFlightNumber(flightNumber);
   }
-
+  function handleNewJourneySearch(){
+    location.reload();
+  }
   return (
     <div>
     {flightData.map((flight)=>(
@@ -91,6 +94,7 @@ const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, 
      </React.Fragment>
         ))}
         <button onClick={()=>bookTrip()} className = {`${styles.bookButtonStyle} ${homePageStyle.primaryButton}`}>Book your trip</button>
+        <button className={`${style.submitButton} ${homePageStyle.primaryButton}`} onClick={handleNewJourneySearch}>New Journey</button>
     </div>
   );
 };
