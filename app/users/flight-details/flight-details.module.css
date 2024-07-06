@@ -38,3 +38,6 @@
   .newJobStyle{
     margin-top: 0 !important;
   }
+  .bookButtonBlock{
+    display: flex;
+  }

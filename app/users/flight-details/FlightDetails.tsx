@@ -93,8 +93,10 @@ const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, 
     )}
      </React.Fragment>
         ))}
+        <div className = {`${styles.bookButtonBlock}`}>
         <button onClick={()=>bookTrip()} className = {`${styles.bookButtonStyle} ${homePageStyle.primaryButton}`}>Book your trip</button>
         <button className={`${style.submitButton} ${styles.newJobStyle} ${homePageStyle.primaryButton}`} onClick={handleNewJourneySearch}>New Journey</button>
+        </div>
     </div>
   );
 };
