@@ -34,6 +34,12 @@ const flightData = [
     cost: '£171',
     flightTime:'8hr'
   },
+  {
+    flightNumber: '123279',
+    flightName:'Emirates',
+    cost: '£165',
+    flightTime:'8hr'
+  },
 ];
 
 const FlightDetails: React.FC<FlightDetailsProps> = ({ isChecked, selectedDate, formData }) => {
