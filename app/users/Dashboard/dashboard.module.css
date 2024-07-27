@@ -28,9 +28,9 @@
     margin-bottom: 5px;
     background-color: rgb(150 202 217 / 50%);
 }
-/* .sortBYContainer{
+.sortBYContainer{
   margin: 0px 0 10px calc(40% - 160px);
-} */
+}
 .sortBY{
   display: inline-block;
 }
