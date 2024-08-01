@@ -6,7 +6,7 @@ const FlightSearch = () => {
   const [flightDetails, setFlightDetails] = useState(null);
   const [originAirport, setOriginAirport] = useState('');
   const [destinationAirport, setDestinationAirport] = useState('');
-  const apiKey="44d4decc3521a0291aa6c39ac5c7a90c";
+  // const apiKey="44d4decc3521a0291aa6c39ac5c7a90c";
 
 
 
