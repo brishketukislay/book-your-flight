@@ -22,6 +22,11 @@
 .signout :hover{
     background-color: #1a4c4deb;
 }
+.signOutIcon{
+    height: 17px;
+    display: inline;
+    margin: 0 5px 3px 0;
+}
 @media(max-width:767px){
     .header{
         font-size: 22px;
