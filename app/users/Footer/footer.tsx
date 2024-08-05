@@ -5,7 +5,7 @@ const footer = () => {
     <footer className={style.footer}>
       <div className={style.footerContent}>
         <p className={style.contact}>
-          Contact Us
+          Contact Us @ +44 7471417307
         </p>
         <p>
           Copyright @ 2024
