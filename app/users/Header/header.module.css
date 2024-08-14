@@ -25,7 +25,7 @@
 .signOutIcon{
     height: 17px;
     display: inline;
-    margin: 0 5px 3px 0;
+    margin: 0 0 3px 5px;
 }
 @media(max-width:767px){
     .header{
