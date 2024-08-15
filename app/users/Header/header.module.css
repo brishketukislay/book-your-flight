@@ -40,6 +40,9 @@
         height: 17px;
         display: inline;
         margin: 0 0 3px 5px;
+        /* display: none; */
+    }
+    .signOutText{
         display: none;
     }
 }
