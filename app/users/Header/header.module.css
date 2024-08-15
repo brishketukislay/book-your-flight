@@ -36,4 +36,10 @@
     .signout{
         margin-top: -5px;
     }
+    .signOutIcon{
+        height: 17px;
+        display: inline;
+        margin: 0 0 3px 5px;
+        display: none;
+    }
 }
