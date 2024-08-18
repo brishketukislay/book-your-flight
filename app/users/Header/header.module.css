@@ -39,7 +39,7 @@
     .signOutIcon{
         height: 17px;
         display: inline;
-        margin: 0 0 3px 5px;
+        margin: 0;
         /* display: none; */
     }
     .signOutText{
