@@ -42,6 +42,9 @@
    }
 }
 @media(max-width:766px){
+    .navElement{
+        padding: 8px 15px;
+    }
     .navClose{
         display: none;
     }
