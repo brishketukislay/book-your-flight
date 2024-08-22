@@ -48,6 +48,9 @@
     .navClose{
         display: none;
     }
+    .navOpen{
+        display: none;
+    }
     .closeButton{
         display: inline;
         position: fixed;
