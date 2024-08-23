@@ -50,6 +50,8 @@
     }
     .navOpen{
         display: none;
+        top: 10px;
+        z-index: 1;
     }
     .closeButton{
         display: inline;
