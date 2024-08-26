@@ -51,7 +51,10 @@
     .navOpen{
         display: none;
         top: 10px;
+    }:hover{
+        font-size: 15px;
     }
+    
     .closeButton{
         display: inline;
         position: fixed;
